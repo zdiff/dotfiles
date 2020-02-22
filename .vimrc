@@ -56,5 +56,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Highlight column 80 to indicate long lines
-set colorcolumn=80
+set clipboard=unnamed
+
+set number
+set cursorline
+highlight clear cursorline
+highlight cursorlinenr ctermfg=red
