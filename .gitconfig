@@ -1,0 +1,8 @@
+[user]
+    name = zdiff
+    email = zdiff@localhost
+[core]
+    editor = vim
+    ignorecase = false
+[diff]
+    tool = vimdiff
