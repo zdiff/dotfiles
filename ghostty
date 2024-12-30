@@ -1,0 +1,4 @@
+command = bash
+font-family = "VictorMono Nerd Font Mono"
+font-size = 13
+theme = catppuccin-macchiato
