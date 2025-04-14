@@ -1,5 +1,7 @@
+auto-update = off
 command = bash
-font-family = "VictorMono Nerd Font Mono"
+font-family = Iosevka Term
 font-size = 13
+gtk-titlebar = false
+shell-integration = none
 theme = catppuccin-macchiato
-window-decoration = false
