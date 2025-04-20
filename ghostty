@@ -1,7 +1,8 @@
 auto-update = off
 command = bash
-font-family = Iosevka Term
+font-family = "Iosevka Term"
 font-size = 13
 gtk-titlebar = false
 shell-integration = none
 theme = catppuccin-macchiato
+title = " "
