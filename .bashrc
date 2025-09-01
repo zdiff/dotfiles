@@ -5,8 +5,8 @@ umask 077
 
 unset HISTFILE
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
