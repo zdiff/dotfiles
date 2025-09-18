@@ -4,5 +4,5 @@ font-family = "Iosevka Term"
 font-size = 13
 gtk-titlebar = false
 shell-integration = none
-theme = rose-pine
+theme = Rose Pine
 title = " "
