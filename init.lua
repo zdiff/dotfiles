@@ -12,6 +12,6 @@ vim.o.undofile = true
 vim.o.updatetime = 250
 vim.opt.wrap = false
 vim.pack.add({
-  "https://github.com/vague2k/vague.nvim",
+  "https://github.com/vague-theme/vague.nvim",
 })
 vim.cmd.colorscheme "vague"
