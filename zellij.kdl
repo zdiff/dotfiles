@@ -1,0 +1,272 @@
+keybinds clear-defaults=true {
+    shared_except "locked" {
+        bind "Ctrl b" {
+            SwitchToMode "tmux"
+        }
+    }
+    tmux {
+        bind "," {
+            SwitchToMode "RenameTab"
+        }
+        bind "{" {
+            MovePane "Left"
+            SwitchToMode "Normal"
+        }
+        bind "}" {
+            MovePane "Right"
+            SwitchToMode "Normal"
+        }
+        bind "\"" {
+            NewPane "Down"
+            SwitchToMode "Normal"
+        }
+        bind "&" {
+            CloseTab
+            SwitchToMode "Normal"
+        }
+        bind "%" {
+            NewPane "Right"
+            SwitchToMode "Normal"
+        }
+        bind "0" {
+            GoToTab 10
+            SwitchToMode "Normal"
+        }
+        bind "1" {
+            GoToTab 1
+            SwitchToMode "Normal"
+        }
+        bind "2" {
+            GoToTab 2
+            SwitchToMode "Normal"
+        }
+        bind "3" {
+            GoToTab 3
+            SwitchToMode "Normal"
+        }
+        bind "4" {
+            GoToTab 4
+            SwitchToMode "Normal"
+        }
+        bind "5" {
+            GoToTab 5
+            SwitchToMode "Normal"
+        }
+        bind "6" {
+            GoToTab 6
+            SwitchToMode "Normal"
+        }
+        bind "7" {
+            GoToTab 7
+            SwitchToMode "Normal"
+        }
+        bind "8" {
+            GoToTab 8
+            SwitchToMode "Normal"
+        }
+        bind "9" {
+            GoToTab 9
+            SwitchToMode "Normal"
+        }
+        bind "c" {
+            NewTab
+            SwitchToMode "Normal"
+        }
+        bind "Ctrl Down" {
+            Resize "Increase Down"
+        }
+        bind "Ctrl Left" {
+            Resize "Increase Left"
+        }
+        bind "Ctrl Right" {
+            Resize "Increase Right"
+        }
+        bind "Ctrl Up" {
+            Resize "Increase Up"
+        }
+        bind "d" {
+            Detach
+        }
+        bind "Down" {
+            MoveFocus "Down"
+            SwitchToMode "Normal"
+        }
+        bind "Esc" {
+            SwitchToMode "Normal"
+        }
+        bind "Left" {
+            MoveFocus "Left"
+            SwitchToMode "Normal"
+        }
+        bind "n" {
+            GoToNextTab
+            SwitchToMode "Normal"
+        }
+        bind "o" {
+            MoveFocus "Right"
+            SwitchToMode "Normal"
+        }
+        bind "p" {
+            GoToPreviousTab
+            SwitchToMode "Normal"
+        }
+        bind "Right" {
+            MoveFocus "Right"
+            SwitchToMode "Normal"
+        }
+        bind "Space" {
+            NextSwapLayout
+            SwitchToMode "Normal"
+        }
+        bind "Up" {
+            MoveFocus "Up"
+            SwitchToMode "Normal"
+        }
+        bind "x" {
+            CloseFocus
+            SwitchToMode "Normal"
+        }
+        bind "z" {
+            ToggleFocusFullscreen
+            SwitchToMode "Normal"
+        }
+    }
+    locked {
+        bind "Ctrl b" {
+            SwitchToMode "Normal"
+        }
+    }
+}
+default_layout "compact"
+default_mode "normal"
+pane_frames false
+scroll_buffer_size 10000
+simplified_ui true
+themes {
+    default {
+        text_unselected {
+            base 205 205 205
+            background 20 20 21
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        text_selected {
+            base 205 205 205
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        ribbon_unselected {
+            base 37 37 48
+            background 205 205 205
+            emphasis_0 37 37 48
+            emphasis_1 205 205 205
+            emphasis_2 243 190 124
+            emphasis_3 187 157 189
+        }
+        ribbon_selected {
+            base 37 37 48
+            background 110 148 178
+            emphasis_0 37 37 48
+            emphasis_1 243 190 124
+            emphasis_2 187 157 189
+            emphasis_3 243 190 124
+        }
+        table_title {
+            base 127 165 99
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        table_cell_unselected {
+            base 205 205 205
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        table_cell_selected {
+            base 205 205 205
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        list_unselected {
+            base 205 205 205
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        list_selected {
+            base 205 205 205
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 110 148 178
+            emphasis_3 187 157 189
+        }
+        frame_selected {
+            base 174 174 209
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 174 174 209
+            emphasis_2 187 157 189
+            emphasis_3 37 37 48
+        }
+        frame_unselected {
+            base 96 96 121
+            background 96 96 121
+            emphasis_0 96 96 121
+            emphasis_1 96 96 121
+            emphasis_2 96 96 121
+            emphasis_3 96 96 121
+        }
+        frame_highlight {
+            base 243 190 124
+            background 37 37 48
+            emphasis_0 187 157 189
+            emphasis_1 243 190 124
+            emphasis_2 243 190 124
+            emphasis_3 243 190 124
+        }
+        exit_code_success {
+            base 127 165 99
+            background 37 37 48
+            emphasis_0 174 174 209
+            emphasis_1 37 37 48
+            emphasis_2 187 157 189
+            emphasis_3 243 190 124
+        }
+        exit_code_error {
+            base 216 100 126
+            background 37 37 48
+            emphasis_0 243 190 124
+            emphasis_1 37 37 48
+            emphasis_2 37 37 48
+            emphasis_3 37 37 48
+        }
+        multiplayer_user_colors {
+            player_1 187 157 189
+            player_2 243 190 124
+            player_3 37 37 48
+            player_4 174 174 209
+            player_5 216 100 126
+            player_6 37 37 48
+            player_7 127 165 99
+            player_8 37 37 48
+            player_9 37 37 48
+            player_10 37 37 48
+        }
+    }
+}
