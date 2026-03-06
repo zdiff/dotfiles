@@ -5,8 +5,8 @@ binds {
     Mod+Shift+Slash {
         show-hotkey-overlay
     }
-    Mod+T hotkey-overlay-title="Open a Terminal: ghostty" {
-        spawn "ghostty"
+    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" {
+        spawn "alacritty"
     }
     Mod+O repeat=false {
         toggle-overview
