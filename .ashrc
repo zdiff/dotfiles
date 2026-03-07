@@ -6,7 +6,7 @@ esac
 
 umask 077
 
-unset HISTFILE
+HISTFILE=/dev/null
 
 export EDITOR='vis'
 export VISUAL='vis'
