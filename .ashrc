@@ -1,5 +1,8 @@
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+case $- in
+  *i*) ;;
+  *) return ;;
+esac
 
 umask 077
 
@@ -12,4 +15,3 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 PS1='$ '
-
