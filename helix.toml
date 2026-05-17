@@ -1,0 +1,17 @@
+theme = "vague"
+
+[editor]
+atomic-save = false
+auto-completion = false
+auto-format = false
+auto-info = false
+auto-pairs = false
+default-line-ending = "lf"
+indent-heuristic = "simple"
+insert-final-newline = false
+line-number = "relative"
+mouse = false
+path-completion = false
+
+[editor.lsp]
+enable = false
