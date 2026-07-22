@@ -119,3 +119,11 @@ layout {
 output "DVI-D-1" {
 
 }
+overview {
+    backdrop-color "#141415"
+}
+workspace "terminal"
+workspace "browser"
+workspace "irc"
+workspace "email"
+workspace "pass"
