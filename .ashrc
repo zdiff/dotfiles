@@ -8,8 +8,8 @@ umask 077
 
 HISTFILE=/dev/null
 
-export EDITOR='vis'
-export VISUAL='vis'
+export EDITOR='hx'
+export VISUAL='hx'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
